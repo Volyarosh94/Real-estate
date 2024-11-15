@@ -22,7 +22,7 @@ function CountDown({ h, m, s }) {
   }
 
   return (
-    <h6 className="text-white">
+    <h6 className="text-theme">
       {hours < 10 ? "0" + hours : hours}h :{" "}
       {menotes < 10 ? "0" + menotes : menotes}m :{" "}
       {seconds < 10 ? "0" + seconds : seconds}s

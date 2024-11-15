@@ -33,9 +33,9 @@ function Join() {
             <img src={require("../images/illustration/01.webp")} alt="img" />
             <AnimationTitles
               title="Crypto Community"
-              className="text-white mb-4 mt-5 h4"
+              className="text-theme mb-4 mt-5 h4"
             />
-            <p className="gray-50">
+            <p className="text-secondary">
               Unprecedented access to investment projects in the real economy
               globally
             </p>
@@ -45,9 +45,9 @@ function Join() {
             <img src={require("../images/illustration/02.webp")} alt="img" />
             <AnimationTitles
               title="Asset Owners"
-              className="text-white mb-4 mt-5 h4"
+              className="text-theme mb-4 mt-5 h4"
             />
-            <p className="gray-50">
+            <p className="text-secondary">
               Proprietary tools for borderless capital raise
             </p>
           </SwiperSlide>
@@ -56,9 +56,9 @@ function Join() {
             <img src={require("../images/illustration/03.webp")} alt="img" />
             <AnimationTitles
               title="Registration"
-              className="text-white mb-4 mt-5 h4"
+              className="text-theme mb-4 mt-5 h4"
             />
-            <p className="gray-50">
+            <p className="text-secondary">
               Absolute data security and maximum transparency of all
               blockchain-based transactions
             </p>
@@ -68,9 +68,9 @@ function Join() {
             <img src={require("../images/illustration/04.webp")} alt="img" />
             <AnimationTitles
               title="Create Solutions"
-              className="text-white mb-4 mt-5 h4"
+              className="text-theme mb-4 mt-5 h4"
             />
-            <p className="gray-50">
+            <p className="text-secondary">
               Decentralized community-ran platform for fundraising
             </p>
           </SwiperSlide>

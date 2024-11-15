@@ -8,10 +8,13 @@ import Loading from "./pages/Header";
 import Partners from "./pages/Partners";
 import Properties from "./pages/Properties";
 import Subscribe from "./pages/Subscribe";
+import { useContext } from "react";
+import { ThemeContext } from "./components/functions/Theme";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <>
+    <div className={`App ${theme}`}>
       <BrowserRouter>
         <NavBar />
         <Loading />
@@ -23,7 +26,7 @@ function App() {
         <Subscribe />
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

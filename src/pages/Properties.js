@@ -53,40 +53,40 @@ function Properties() {
             }}
           >
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 All
               </Button>
             </SwiperSlide>
             <SwiperSlide>
               <Button
-                className="ms-0 bg-black-100 border-0 active"
+                className="ms-0 bg-card border-0 active"
                 onClick={active}
               >
                 Cottage
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 Chalet
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 Manor
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 Penthouse
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 Farmhouse
               </Button>
             </SwiperSlide>
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-card border-0" onClick={active}>
                 Duplex
               </Button>
             </SwiperSlide>
@@ -131,7 +131,7 @@ function Properties() {
           >
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -141,7 +141,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
+                  <h5 className="mt-2 text-theme fw-normal">
                     Cottage «Forrest 1»
                   </h5>
                   <p className="gray-90">@Red Oak Realty</p>
@@ -151,7 +151,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
+                      <h6 className="text-theme">29.71 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -173,7 +173,7 @@ function Properties() {
                       onClick={like}
                     ></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Freshness</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Freshness</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -181,7 +181,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">14.81 ETH</h6>
+                      <h6 className="text-theme">14.81 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -200,7 +200,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Wish house</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Wish house</h5>
                   <p className="gray-90">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -208,7 +208,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">16.62 ETH</h6>
+                      <h6 className="text-theme">16.62 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -217,7 +217,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -227,7 +227,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Spruce</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Spruce</h5>
                   <p className="gray-90">@Dream House</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -235,7 +235,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.01 ETH</h6>
+                      <h6 className="text-theme">17.01 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -254,7 +254,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Residence Rybna</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Residence Rybna</h5>
                   <p className="gray-90">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -262,7 +262,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
+                      <h6 className="text-theme">29.71 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -281,7 +281,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Blue Sky</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Blue Sky</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -289,7 +289,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.31 ETH</h6>
+                      <h6 className="text-theme">17.31 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -298,7 +298,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -308,7 +308,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
+                  <h5 className="mt-2 text-theme fw-normal">
                     Cottage «Forrest 1»
                   </h5>
                   <p className="gray-90">@Red Oak Realty</p>
@@ -318,7 +318,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
+                      <h6 className="text-theme">29.71 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -327,7 +327,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -340,7 +340,7 @@ function Properties() {
                       onClick={like}
                     ></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Freshness</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Freshness</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -348,7 +348,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">14.81 ETH</h6>
+                      <h6 className="text-theme">14.81 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -357,7 +357,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -367,7 +367,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Wish house</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Wish house</h5>
                   <p className="gray-90">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -375,7 +375,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">16.62 ETH</h6>
+                      <h6 className="text-theme">16.62 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -384,7 +384,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -394,7 +394,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Spruce</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Spruce</h5>
                   <p className="gray-90">@Dream House</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -402,7 +402,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.01 ETH</h6>
+                      <h6 className="text-theme">17.01 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -411,7 +411,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -421,7 +421,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Residence Rybna</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Residence Rybna</h5>
                   <p className="gray-90">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -429,7 +429,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
+                      <h6 className="text-theme">29.71 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>
@@ -438,7 +438,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-card rounded">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -448,7 +448,7 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Blue Sky</h5>
+                  <h5 className="mt-2 text-theme fw-normal">Blue Sky</h5>
                   <p className="gray-90">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
@@ -456,7 +456,7 @@ function Properties() {
                       <span className="gray-90">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.31 ETH</h6>
+                      <h6 className="text-theme">17.31 ETH</h6>
                       <span className="gray-90">Current Bid</span>
                     </div>
                   </div>

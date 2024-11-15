@@ -10,7 +10,7 @@ function Developers() {
           title="Our the best developers"
           className="title mx-auto"
         />
-        <p className="gray-50 text-center mb-5">
+        <p className="text-secondary text-center mb-5">
           The value of real estate can be affected by its utility, project, and
           demand.{" "}
         </p>
@@ -45,7 +45,7 @@ function Developers() {
                   src={require("../images/developers/logo-01.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real house</h6>
+                <h6 className="text-theme m-0">UA real house</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -55,7 +55,7 @@ function Developers() {
                   src={require("../images/developers/logo-02.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">ERA Ukraine Real Estate</h6>
+                <h6 className="text-theme m-0">ERA Ukraine Real Estate</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -65,7 +65,7 @@ function Developers() {
                   src={require("../images/developers/logo-03.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Happy Neighbor</h6>
+                <h6 className="text-theme m-0">Happy Neighbor</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -75,7 +75,7 @@ function Developers() {
                   src={require("../images/developers/logo-04.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">American Home Agents</h6>
+                <h6 className="text-theme m-0">American Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -85,7 +85,7 @@ function Developers() {
                   src={require("../images/developers/logo-05.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Ukr Home Agents</h6>
+                <h6 className="text-theme m-0">Ukr Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -95,7 +95,7 @@ function Developers() {
                   src={require("../images/developers/logo-06.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real estate agency</h6>
+                <h6 className="text-theme m-0">UA real estate agency</h6>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -129,7 +129,7 @@ function Developers() {
                   src={require("../images/developers/logo-07.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Red Oak Realty</h6>
+                <h6 className="text-theme m-0">Red Oak Realty</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -139,7 +139,7 @@ function Developers() {
                   src={require("../images/developers/logo-08.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Dream House</h6>
+                <h6 className="text-theme m-0">Dream House</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -149,7 +149,7 @@ function Developers() {
                   src={require("../images/developers/logo-09.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">
+                <h6 className="text-theme m-0">
                   Leading Real Estate Companies
                 </h6>
               </div>
@@ -161,7 +161,7 @@ function Developers() {
                   src={require("../images/developers/logo-10.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Home Partners of World</h6>
+                <h6 className="text-theme m-0">Home Partners of World</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -171,7 +171,7 @@ function Developers() {
                   src={require("../images/developers/logo-11.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Red Oak Realty</h6>
+                <h6 className="text-theme m-0">Red Oak Realty</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -181,7 +181,7 @@ function Developers() {
                   src={require("../images/developers/logo-13.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">American Home Agents</h6>
+                <h6 className="text-theme m-0">American Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -191,7 +191,7 @@ function Developers() {
                   src={require("../images/developers/logo-12.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real estate agency</h6>
+                <h6 className="text-theme m-0">UA real estate agency</h6>
               </div>
             </SwiperSlide>
           </Swiper>

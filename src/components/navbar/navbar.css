@@ -7,7 +7,7 @@
 }
 
 .nav-link {
-  color: white;
+  color: var(--text-primary);
   letter-spacing: 0.3px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .navbar .container div .fa-heart {
-  color: white;
+  color: var(--text-primary);
   font-size: 20px;
   position: relative;
 }

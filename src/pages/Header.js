@@ -27,7 +27,7 @@ function Loading() {
           </p>
           <Button className="m-0 my-3 px-5 py-2 fs-5 fw-bold">Explore</Button>
           <div
-            style={{ color: "white" }}
+            style={{ color: "var(--text-primary)" }}
             className="d-none d-md-flex justify-content-between align-items-center my-4"
           >
             <div>
@@ -51,7 +51,7 @@ function Loading() {
           className="w-100 my-5"
         >
           <div className="cards">
-            <Card className="bg-black-100 rounded">
+            <Card className="bg-card rounded">
               <Card.Body className="p-2">
                 <div className="rounded overflow-hidden position-relative">
                   <Card.Img
@@ -61,7 +61,7 @@ function Loading() {
                   />
                   <i className="fa-regular fa-heart like" onClick={like}></i>
                 </div>
-                <h5 className="mt-2 text-white fw-normal">Residence Rybna</h5>
+                <h5 className="mt-2 text-theme fw-normal">Residence Rybna</h5>
                 <p className="gray-90">@UA real estate agency</p>
                 <div className="d-flex">
                   <div className="me-3">
@@ -69,13 +69,13 @@ function Loading() {
                     <span className="gray-90">Remaining Time</span>
                   </div>
                   <div>
-                    <h6 className="text-white">29.71 ETH</h6>
+                    <h6 className="text-theme">29.71 ETH</h6>
                     <span className="gray-90">Current Bid</span>
                   </div>
                 </div>
               </Card.Body>
             </Card>
-            <Card className="bg-black-100">
+            <Card className="bg-card">
               <Card.Body className="p-2">
                 <div className="rounded overflow-hidden position-relative">
                   <Card.Img
@@ -85,7 +85,7 @@ function Loading() {
                   />
                   <i className="fa-regular fa-heart like" onClick={like}></i>
                 </div>
-                <h5 className="mt-2 text-white fw-normal">Blue Sky</h5>
+                <h5 className="mt-2 text-theme fw-normal">Blue Sky</h5>
                 <p className="gray-90">@ERA Ukraine Real Estate</p>
                 <div className="d-flex">
                   <div className="me-3">
@@ -93,7 +93,7 @@ function Loading() {
                     <span className="gray-90">Remaining Time</span>
                   </div>
                   <div>
-                    <h6 className="text-white">17.31 ETH</h6>
+                    <h6 className="text-theme">17.31 ETH</h6>
                     <span className="gray-90">Current Bid</span>
                   </div>
                 </div>

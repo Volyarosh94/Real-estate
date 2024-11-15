@@ -12,7 +12,7 @@ function AboutUs() {
           transition={{ duration: 0.8 }}
         >
           <AnimationTitles title="What is Renting-Platform?" className="title" />
-          <p className="gray-50 mb-5">
+          <p className="text-secondary mb-5">
             As new technologies like cryptocurrency develop, the real estate
             sector is changing drastically. It is important to understand both
             how these technologies and the traditional real estate market work.

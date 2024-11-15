@@ -6,8 +6,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // Import Framer-motion
 import { motion } from "framer-motion";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "../components/functions/Theme";
 
 function Partners() {
+  const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+
+  }, [theme])
   return (
     // Start partners
     <motion.div
@@ -39,22 +46,22 @@ function Partners() {
           }}
         >
           <SwiperSlide>
-            <img src={require("../images/partners/stellar.png")} alt="img" />
+            <img src={require("../images/partners/stellar.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/blockport.png")} alt="img" />
+            <img src={require("../images/partners/blockport.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/fantom.png")} alt="img" />
+            <img src={require("../images/partners/fantom.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/onfido.png")} alt="img" />
+            <img src={require("../images/partners/onfido.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/tr.png")} alt="img" />
+            <img src={require("../images/partners/tr.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/qa.png")} alt="img" />
+            <img src={require("../images/partners/qa.png")} alt="img" className={theme === "light-theme" ? "img-contrast" : ""} />
           </SwiperSlide>
         </Swiper>
       </Container>
