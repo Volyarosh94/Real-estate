@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../../models/userModel');
 const ErrorHandler = require('../../utils/errorHandler');
 const asyncErrorHandler = require('../helpers/asyncErrorHandler');
+const {JWT_SECRET} = require("../../config/config");
 
 exports.isAuthenticatedUser = asyncErrorHandler(async (req, res, next) => {
 
@@ -11,7 +12,7 @@ exports.isAuthenticatedUser = asyncErrorHandler(async (req, res, next) => {
         return next(new ErrorHandler("Please Login to Access", 401))
     }
 
-    const decodedData = jwt.verify(token, process.env.JWT_SECRET);
+    const decodedData = jwt.verify(token, JWT_SECRET);
     req.user = await User.findById(decodedData.id);
     next();
 });

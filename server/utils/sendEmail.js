@@ -1,6 +1,7 @@
 // const nodeMailer = require('nodemailer');
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const {SENDGRID_MAIL, SENDGRID_API_KEY} = require("../config/config");
+sgMail.setApiKey(SENDGRID_API_KEY);
 
 const sendEmail = async (options) => {
   // const transporter = nodeMailer.createTransport({
@@ -24,7 +25,7 @@ const sendEmail = async (options) => {
 
   const msg = {
     to: options.email,
-    from: process.env.SENDGRID_MAIL,
+    from: SENDGRID_MAIL,
     templateId: options.templateId,
     dynamic_template_data: options.data,
   };

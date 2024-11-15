@@ -3,6 +3,7 @@ const Order = require("../models/orderModel");
 const Product = require("../models/productModel");
 const ErrorHandler = require("../utils/errorHandler");
 const sendEmail = require("../utils/sendEmail");
+const {SENDGRID_ORDER_TEMPLATEID} = require("../config/config");
 
 // Create New Order
 exports.newOrder = asyncErrorHandler(async (req, res, next) => {
@@ -25,7 +26,7 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
 
   await sendEmail({
     email: req.user.email,
-    templateId: process.env.SENDGRID_ORDER_TEMPLATEID,
+    templateId: SENDGRID_ORDER_TEMPLATEID,
     data: {
       name: req.user.name,
       shippingInfo,

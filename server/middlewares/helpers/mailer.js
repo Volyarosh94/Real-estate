@@ -1,4 +1,7 @@
 const nodeMailer = require("nodemailer");
+const {ECOM_EMAIL, ECOM_PASSWORD} = require("../../config/config");
+const {} = require("../config/config");
+
 
 exports.sendEmail = (mailingData) => {
   const transporter = nodeMailer.createTransport({
@@ -7,8 +10,8 @@ exports.sendEmail = (mailingData) => {
     secure: false,
     requireTLS: true,
     auth: {
-      user: process.env.ECOM_EMAIL,
-      pass: process.env.ECOM_PASSWORD,
+      user: ECOM_EMAIL,
+      pass: ECOM_PASSWORD,
     },
   });
   return transporter

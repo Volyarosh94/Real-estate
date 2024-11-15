@@ -1,0 +1,81 @@
+const PORT = process.env.PORT || 3099;
+
+const MONGO_URI = process.env.MONGO_URI;
+const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_EXPIRE = process.env.JWT_EXPIRE;
+
+const COOKIE_EXPIRE = process.env.COOKIE_EXPIRE;
+
+const STRIPE_API_KEY = process.env.STRIPE_API_KEY;
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
+
+const SMTP_HOST = process.env.SMTP_HOST;
+const SMTP_PORT = process.env.SMTP_PORT;
+const SMTP_SERVICE = process.env.SMTP_SERVICE;
+const SMTP_MAIL = process.env.SMTP_MAIL;
+const SMTP_PASSWORD = process.env.SMTP_PASSWORD;
+
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+const SENDGRID_MAIL = process.env.SENDGRID_MAIL;
+const SENDGRID_RESET_TEMPLATEID = process.env.SENDGRID_RESET_TEMPLATEID;
+const SENDGRID_ORDER_TEMPLATEID =  process.env.SENDGRID_ORDER_TEMPLATEID;
+
+const CLOUDINARY_NAME = process.env.CLOUDINARY_NAME;
+const CLOUDINARY_API_KEY = process.env.CLOUDINARY_API_KEY;
+const CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET;
+
+const PAYTM_MID = process.env.PAYTM_MID;
+const PAYTM_MERCHANT_KEY = process.env.PAYTM_MERCHANT_KEY;
+const PAYTM_WEBSITE = process.env.PAYTM_WEBSITE;
+const PAYTM_CHANNEL_ID = process.env.PAYTM_CHANNEL_ID;
+const PAYTM_INDUSTRY_TYPE = process.env.PAYTM_INDUSTRY_TYPE;
+const PAYTM_CUST_ID = process.env.PAYTM_CUST_ID;
+
+const NODE_ENV = process.env.NODE_ENV;
+
+const ECOM_EMAIL = process.env.ECOM_EMAIL;
+const ECOM_PASSWORD = process.env.ECOM_PASSWORD;
+
+
+
+module.exports = {
+    PORT,
+
+    MONGO_URI,
+
+    JWT_SECRET,
+    JWT_EXPIRE,
+
+    COOKIE_EXPIRE,
+
+    STRIPE_API_KEY,
+    STRIPE_SECRET_KEY,
+
+    SMTP_HOST,
+    SMTP_PORT,
+    SMTP_SERVICE,
+    SMTP_MAIL,
+    SMTP_PASSWORD,
+
+    SENDGRID_API_KEY,
+    SENDGRID_MAIL,
+    SENDGRID_RESET_TEMPLATEID,
+    SENDGRID_ORDER_TEMPLATEID,
+
+    CLOUDINARY_NAME,
+    CLOUDINARY_API_KEY,
+    CLOUDINARY_API_SECRET,
+
+    PAYTM_MID,
+    PAYTM_MERCHANT_KEY,
+    PAYTM_WEBSITE,
+    PAYTM_CHANNEL_ID,
+    PAYTM_INDUSTRY_TYPE,
+    PAYTM_CUST_ID,
+
+    ECOM_EMAIL,
+    ECOM_PASSWORD,
+
+    NODE_ENV
+
+}

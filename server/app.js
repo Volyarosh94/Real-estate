@@ -3,24 +3,34 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
-const userRouter = require("./routes/userRoute");
+const {
+  userRouter,
+  orderRouter,
+  paymentRouter,
+  productRouter,
+} = require("./routes/index");
+const {NODE_ENV} = require("./config/config");
+const {router} = require("./routes");
 
 const app = express();
-
-// config
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config({ path: "backend/config/config.env" });
-}
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/api/user', userRouter);
 app.use(fileUpload());
+
+// routes
+
+app.use("/", router);
+app.use('/api/user', userRouter);
+app.use('/api/order', orderRouter);
+app.use('/api/payment', paymentRouter);
+app.use('/api/product', productRouter);
+
 
 // deployment
 __dirname = path.resolve();
-if (process.env.NODE_ENV === "production") {
+if (NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/frontend/build")));
 
   app.get("*", (req, res) => {

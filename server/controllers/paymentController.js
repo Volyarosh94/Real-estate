@@ -5,6 +5,7 @@ const https = require("https");
 const Payment = require("../models/paymentModel");
 const ErrorHandler = require("../utils/errorHandler");
 const { v4: uuidv4 } = require("uuid");
+const {PAYTM_MID, PAYTM_WEBSITE, PAYTM_CHANNEL_ID, PAYTM_INDUSTRY_TYPE, PAYTM_CUST_ID, PAYTM_MERCHANT_KEY} = require("../config/config");
 
 // exports.processPayment = asyncErrorHandler(async (req, res, next) => {
 //     const myPayment = await stripe.paymentIntents.create({
@@ -32,12 +33,12 @@ exports.processPayment = asyncErrorHandler(async (req, res, next) => {
   var params = {};
 
   /* initialize an array */
-  params["MID"] = process.env.PAYTM_MID;
-  params["WEBSITE"] = process.env.PAYTM_WEBSITE;
-  params["CHANNEL_ID"] = process.env.PAYTM_CHANNEL_ID;
-  params["INDUSTRY_TYPE_ID"] = process.env.PAYTM_INDUSTRY_TYPE;
+  params["MID"] = PAYTM_MID;
+  params["WEBSITE"] = PAYTM_WEBSITE;
+  params["CHANNEL_ID"] = PAYTM_CHANNEL_ID;
+  params["INDUSTRY_TYPE_ID"] = PAYTM_INDUSTRY_TYPE;
   params["ORDER_ID"] = "oid" + uuidv4();
-  params["CUST_ID"] = process.env.PAYTM_CUST_ID;
+  params["CUST_ID"] = PAYTM_CUST_ID;
   params["TXN_AMOUNT"] = JSON.stringify(amount);
   // params["CALLBACK_URL"] = `${req.protocol}://${req.get("host")}/api/v1/callback`;
   params["CALLBACK_URL"] = `https://${req.get("host")}/api/v1/callback`;
@@ -46,7 +47,7 @@ exports.processPayment = asyncErrorHandler(async (req, res, next) => {
 
   let paytmChecksum = paytm.generateSignature(
     params,
-    process.env.PAYTM_MERCHANT_KEY
+    PAYTM_MERCHANT_KEY
   );
   paytmChecksum
     .then(function (checksum) {
@@ -73,7 +74,7 @@ exports.paytmResponse = (req, res, next) => {
 
   let isVerifySignature = paytm.verifySignature(
     req.body,
-    process.env.PAYTM_MERCHANT_KEY,
+    PAYTM_MERCHANT_KEY,
     paytmChecksum
   );
   if (isVerifySignature) {
@@ -89,7 +90,7 @@ exports.paytmResponse = (req, res, next) => {
     paytm
       .generateSignature(
         JSON.stringify(paytmParams.body),
-        process.env.PAYTM_MERCHANT_KEY
+        PAYTM_MERCHANT_KEY
       )
       .then(function (checksum) {
         paytmParams.head = {

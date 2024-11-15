@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 const Fawn = require("fawn");
+const {MONGO_URI} = require("../../config/config");
+const {} = require("../config/config");
+
 
 module.exports = () => {
   const self = module.exports;
   mongoose
-    .connect(process.env.MONGO_URI, {
+    .connect(MONGO_URI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
@@ -17,5 +20,5 @@ module.exports = () => {
       );
       setTimeout(self, 5000);
     });
-  return Fawn.init(mongoose, process.env.TRANS_COLL);
+  return Fawn.init(mongoose, TRANS_COLL);
 };

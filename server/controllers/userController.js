@@ -6,6 +6,7 @@ const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
 const cloudinary = require("cloudinary");
 const axios = require('axios');
+const {SENDGRID_RESET_TEMPLATEID} = require("../config/config");
 
 // Register User
 exports.registerUser = asyncErrorHandler(async (req, res, next) => {
@@ -99,7 +100,7 @@ exports.forgotPassword = asyncErrorHandler(async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      templateId: process.env.SENDGRID_RESET_TEMPLATEID,
+      templateId: SENDGRID_RESET_TEMPLATEID,
       data: {
         reset_url: resetPasswordUrl,
       },
